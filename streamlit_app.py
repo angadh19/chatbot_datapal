@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_chat import message
-from streamlit_extras import colored_header
-from streamlit_extras import add_vertical_space
+from streamlit_extras.colored_header import colored_header
+from streamlit_extras.add_vertical_space import add_vertical_space
 from hugchat import hugchat
 
 st.set_page_config(page_title="HugChat - An LLM-powered Streamlit app")
@@ -31,7 +31,7 @@ if 'past' not in st.session_state:
 
 # Layout of input/response containers
 input_container = st.container()
-colored_header(label='',description='', color_name='blue-30')
+colored_header(label='', description='', color_name='blue-30')
 response_container = st.container()
 
 # User input
