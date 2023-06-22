@@ -31,7 +31,7 @@ if 'past' not in st.session_state:
 
 # Layout of input/response containers
 input_container = st.container()
-colored_header(description='', color_name='blue-30')
+colored_header(label='',description='', color_name='blue-30')
 response_container = st.container()
 
 # User input
